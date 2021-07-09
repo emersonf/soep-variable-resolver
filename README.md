@@ -29,7 +29,7 @@ To run the application, you'll need Java, specifically JRE 8.
 You can either download the application from GitHub or [build it](#compiling) yourself. Once you have the JAR file, open a terminal and run:
 
 ```
-java -jar soep-variable-resolver-0.1.jar
+java -jar soep-variable-resolver.jar
 ```
 
 You should the application logs scroll by. If the run succeeds, you'll see output that looks like:
@@ -44,7 +44,7 @@ Please note that each run overwrites any CSV file created by the previous run.
 
 To compile the code, you'll need JDK 8. 
 
-Simply run `./gradlew build` from a terminal. The application will be created in the `build/libs/soep-variable-resolver-0.1.jar` file. Please note that there are two JARs in that directory, you'll need the larger one, not the one with the `-plain` suffix.
+Simply run `./gradlew build` from a terminal. The application will be created in the `build/libs/soep-variable-resolver-<version number>.jar` file. Please note that there are two JARs in that directory, you'll need the larger one, not the one with the `-plain` suffix.
 
 # Modifying
 
