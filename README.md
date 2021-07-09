@@ -29,7 +29,7 @@ To run the application, you'll need Java, specifically JRE 8.
 You can either download the application from GitHub or [build it](#compiling) yourself. Once you have the JAR file, open a terminal and run:
 
 ```
-java -jar soep-variable-resolver.jar
+java -jar soep-variable-resolver-<version number>.jar
 ```
 
 You should the application logs scroll by. If the run succeeds, you'll see output that looks like:
