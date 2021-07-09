@@ -1,0 +1,23 @@
+name: Java CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: soep-variable-resolver.jar
+          path: build/libs/soep-variable-resolver-[0-9]+.[0-9]+.[0-9]+.jar
+          if-no-files-found: ignore

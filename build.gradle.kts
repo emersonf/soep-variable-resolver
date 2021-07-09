@@ -4,7 +4,6 @@ plugins {
     val kotlinVersion = "1.5.20"
     val springBootVersion = "2.5.2" // duplicated below
 
-    application
     java
     kotlin("jvm") version kotlinVersion
     id("org.springframework.boot") version springBootVersion
@@ -39,8 +38,4 @@ tasks.test {
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
-}
-
-application {
-    mainClass.set("ApplicationKt")
 }

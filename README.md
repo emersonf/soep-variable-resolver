@@ -26,13 +26,25 @@ The code already has support for multiple questions, so this should be straightf
 # Running
 To run the application, you'll need Java, specifically JRE 8.
 
-Please note that each run overwrites the output of the previous run.
+You can either download the application from GitHub or [build it](#compiling) yourself. Once you have the JAR file, open a terminal and run:
+
+```
+java -jar soep-variable-resolver.jar
+```
+
+You should the application logs scroll by. If the run succeeds, you'll see output that looks like:
+
+```
+2021-07-09 20:54:35.542  INFO 19597 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=questionDownloadingJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 1s631ms
+```
+
+Please note that each run overwrites any CSV file created by the previous run.
 
 # Compiling
 
 To compile the code, you'll need JDK 8. 
 
-Simply run `./gradlew build` from a terminal. 
+Simply run `./gradlew build` from a terminal. The application will be created in the `build/libs/soep-variable-resolver-<version number>.jar` file. Please note that there are two JARs in that directory, you'll need the larger one, not the one with the `-plain` suffix.
 
 # Modifying
 
