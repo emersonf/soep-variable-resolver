@@ -1,0 +1,4675 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>
+            
+    pl/plj0014_v1
+
+        </title>
+        <link rel="shortcut icon" type="image/png" href="/static/dist/favicon.ico"/>
+        <!-- Webpack bundle: "index" CSS -->
+        <link type="text/css" href="/static/dist/index.css" rel="stylesheet" />
+        
+    <!-- Webpack bundle: "visualization" CSS -->
+    <link type="text/css" href="/static/dist/visualization.css" rel="stylesheet" />
+    <link type="text/css" href="/static/dist/variables.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+    
+    
+    <nav id="paneldata-navbar" id="nav-container" class="navbar-expand-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+            <ul class="navbar-nav container-fluid">
+                <li class="nav-item">
+                    <a type="button" class="btn" href="/">paneldata.org</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a type="button" class="btn dropdown-toggle" href="#" id="navbarbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Studies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                            <a class="dropdown-item" href="/soep-base/">BASE II</a>
+                        
+                            <a class="dropdown-item" href="/pairfam/">pairfam</a>
+                        
+                            <a class="dropdown-item" href="/iab-soep-mig/">IAB-SOEP Migration Sample</a>
+                        
+                            <a class="dropdown-item" href="/gip/">German Internet Panel (GIP)</a>
+                        
+                            <a class="dropdown-item" href="/soep-long/">SOEP-Long</a>
+                        
+                            <a class="dropdown-item" href="/soep-pretest/">SOEP Pretests</a>
+                        
+                            <a class="dropdown-item" href="/soep-core/">SOEP-Core</a>
+                        
+                            <a class="dropdown-item" href="/soep-is/">SOEP-IS</a>
+                        
+                            <a class="dropdown-item" href="/twinlife/">TwinLife</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a type="button" class="btn" href="/search/">Search</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav container-fluid justify-content-end">
+                
+                    <li class="nav-item">
+                        <a type="button" class="btn" href="/workspace/login/?next=/soep-core/data/pl/plj0014_v1">Register / log in</a>
+                    </li>
+                
+            </ul>
+        </div>
+
+        
+    <div class="container-fluid d-flex justify-content-start mt-2">
+    <a class="navbar-brand" href="/soep-core/">
+        SOEP-Core
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a href="/soep-core/#datasets" class="nav-link">Data</a>
+        </li>
+        <li class="nav-item"><a href="/soep-core/#instruments" class="nav-link">Instruments</a>
+        </li>
+        
+            <li class="nav-item"><a href="/soep-core/topics/en" class="nav-link">Topics</a>
+            </li>
+        
+        <li class="nav-item"><a href="/soep-core/publ/" class="nav-link">Publications</a>
+        </li>
+        <li class="nav-item">
+        <a
+            href='https://paneldata.org/search/all?Study="SOEP-Core"'
+            class="nav-link">
+            Search in Study
+        </a>
+        </li>
+    </ul>
+</div>
+
+
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex-column d-flex px-5 justify-content-center" id="main-container">
+
+        <!-- Nobody should use IE anymore -->
+        <div id="windowsWarning" class="hidden alert alert-danger" align="center">
+            <h1>Attention</h1>
+            <p>
+            You are using Internet Explorer.</br>
+            Content will likely not be displayed correctly.</br>
+            Please switch to a different Browser to use this site.
+            </p>
+        </div>
+        <!--[if IE]>
+        <div class="hidden alert alert-danger" align="center">
+            <h1>Attention</h1>
+            <p>
+            You are using Internet Explorer.</br>
+            Content will likely not be displayed correctly.</br>
+            Please switch to a different Browser to use this site.
+            </p>
+        </div>
+        <![endif]-->
+
+        
+    <input type="hidden" name="csrfmiddlewaretoken" value="Ce56gKBOq84b51SbIZUgWxhu5OSlAPoRL7pgnADpuuWstPnAkWuLMIlgyq379mLk">
+    <script id="context_data" type="application/json">{"variable": {"id": "1ed34630-f58b-5f93-97d2-338472aff12a", "name": "plj0014_v1", "data": {"name": "plj0014_v1", "label": "[de] Staatsangehoerigkeit  [1984-1993,1996-2019]", "label_de": "Staatsangehoerigkeit  [1984-1993,1996-2019]", "concept_id": "18caa7c9-1ab5-5b37-aae6-3ddd7ebfd8b1", "scale": "cat", "uni": {"labels": ["[-8] [de] Frage in diesem Jahr nicht Teil des Frageprogramms", "[-7] Only available in less restricted edition", "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] [de] in Fragebogenversion nicht enthalten", "[-4] [de] Unzulaessige Mehrfachantwort", "[-3] [de] nicht valide", "[-2] [de] trifft nicht zu", "[-1] [de] keine Angabe", "[999] [de] ethnische Minderheiten (z.B. Jesiden Roma)", "[333] [de] sonst. unspez. Ausland", "[222] [de] Eastern Europe", "[196] [de] Kosovo", "[195] [de] Inguschetien", "[188] [de] Tschetschenien", "[183] [de] Niger", "[181] [de] Myanmar", "[180] [de] Bessarabien", "[179] [de] Malawi", "[178] [de] Ruanda", "[177] [de] Bhutan", "[176] [de] Lesotho", "[175] [de] Grenada", "[174] [de] Madagaskar", "[173] [de] Simbabwe", "[172] [de] Kaukasus", "[171] [de] Guyana", "[170] [de] Surinam", "[169] [de] Kambodscha", "[168] [de] Montenegro", "[167] [de] Honduras", "[166] [de] Gambia", "[165] [de] Serbien", "[164] [de] Hawaii", "[163] [de] Malediven", "[162] [de] Senegal", "[161] [de] Bahrain", "[160] [de] Osttimor", "[159] [de] Panama", "[158] [de] Sierra Leone(Westafrika)", "[157] [de] Guatemala", "[156] [de] Afrika", "[155] [de] Turkmenistan", "[154] [de] Taiwan", "[153] [de] Freistaat Danzig", "[152] [de] Palaestina", "[151] [de] Jemen", "[150] [de] Liberia", "[149] [de] Kurdistan", "[148] [de] Armenien", "[147] [de] Tschad", "[146] [de] Litauen", "[145] [de] Mongolei", "[144] [de] Togo", "[143] [de] Kongo", "[142] [de] Sudan", "[141] [de] Georgien", "[140] [de] Kosovo-Albaner", "[139] [de] Kamerun", "[138] [de] Mali", "[137] [de] Mikronesien", "[136] [de] Oman", "[135] [de] Uganda", "[134] [de] Bahamas", "[133] [de] Uruguay", "[132] [de] Weissrussland", "[131] [de] Seychellen", "[130] [de] Aserbaidschan", "[129] [de] Samoa", "[128] [de] Malaysia", "[127] [de] Elfenbeinkueste", "[126] [de] Kuwait", "[125] [de] Guinea", "[124] [de] Paraguay", "[123] [de] Slowakei", "[122] [de] Slowenien", "[121] [de] Makedonien", "[120] [de] Bosnien/Herzegowina", "[119] [de] Kroatien", "[118] [de] Niederlande", "[117] [de] Belgien", "[116] [de] Luxemburg", "[115] [de] Trinidad Tobago", "[114] [de] Haiti", "[113] [de] Botswana", "[112] [de] Malta", "[111] [de] Libyen", "[110] [de] Kenia", "[109] [de] Nicaragua", "[108] [de] Dominikanische Republik", "[107] [de] Belize", "[106] [de] Montenegro", "[105] [de] Namibia", "[104] [de] Malaysia", "[103] [de] Lettland", "[102] [de] Angola", "[101] [de] Estland", "[100] [de] Laos", "[99] [de] Puerto Rico", "[98] [de] Staatenlos", "[97] [de] Usbekistan", "[96] [de] Ecuador", "[95] [de] Sambia", "[94] [de] Burkina Faso", "[93] [de] Singapur", "[92] [de] Costa Rica", "[91] [de] Turkmenistan-UdSSR (bis 1991)", "[90] [de] Jordanien", "[89] [de] Eritrea", "[88] [de] El Salvador", "[87] [de] Vereinigte Arabische Emirate", "[86] [de] Suedafrika", "[85] [de] Pakistan", "[84] [de] Somalia", "[83] [de] Vietnam", "[82] [de] Tadschikistan", "[81] [de] Aegypten", "[80] [de] Mocambique", "[79] [de] Algerien", "[78] [de] Ukraine", "[77] [de] Kirgistan", "[76] [de] Libanon", "[75] [de] Albanien", "[74] [de] Kasachstan", "[73] [de] Moldawien", "[72] [de] St. Lucia", "[71] [de] Irland", "[70] [de] Island", "[69] [de] Liechtenstein", "[68] [de] China", "[67] [de] Marokko", "[66] [de] Nepal", "[65] [de] Sri Lanka", "[64] [de] Peru", "[63] [de] Hongkong", "[62] [de] Monaco", "[61] [de] Brasilien", "[60] [de] Irak", "[59] [de] Kuba", "[58] [de] Zypern", "[57] [de] Tansania", "[56] [de] Neuseeland", "[55] [de] Kanada", "[54] [de] Nigeria", "[53] [de] Mauritius", "[52] [de] Tunesien", "[51] [de] Venezuela", "[50] [de] Bangla Desh", "[49] [de] Ghana", "[48] [de] Kolumbien", "[47] [de] Aethiopien", "[46] [de] Saudi-Arabien", "[45] [de] Jamaika", "[44] [de] Thailand", "[43] [de] Afghanistan", "[42] [de] Indien", "[41] [de] Australien", "[40] [de] Japan", "[39] [de] Israel", "[38] [de] Philippinen", "[37] [de] Benin", "[36] [de] Cap Verden", "[35] [de] Argentinien", "[34] [de] Mexiko", "[33] [de] Kurdistan", "[32] [de] Russland", "[31] [de] Tschechien", "[30] [de] Syrien", "[29] [de] Bulgarien", "[28] [de] Portugal", "[27] [de] Bolivien", "[26] [de] Ungarn", "[25] [de] Indonesien", "[24] [de] Iran", "[23] [de] Korea", "[22] [de] Polen", "[21] [de] Rumaenien", "[20] [de] Chile", "[19] [de] Schweiz", "[18] [de] USA", "[17] [de] Finnland", "[16] [de] Norwegen", "[15] [de] Schweden", "[14] [de] Grossbritannien", "[13] [de] Daenemark", "[12] [de] Benelux", "[11] [de] Frankreich", "[10] [de] Oesterreich", "[6] [de] Spanien", "[5] [de] Italien", "[4] [de] Griechenland", "[3] [de] Ex-Jugoslawien", "[2] [de] Tuerkei", "[1] [de] Deutschland"], "values": [-8, -7, -6, -5, -4, -3, -2, -1, 999, 333, 222, 196, 195, 188, 183, 181, 180, 179, 178, 177, 176, 175, 174, 173, 172, 171, 170, 169, 168, 167, 166, 165, 164, 163, 162, 161, 160, 159, 158, 157, 156, 155, 154, 153, 152, 151, 150, 149, 148, 147, 146, 145, 144, 143, 142, 141, 140, 139, 138, 137, 136, 135, 134, 133, 132, 131, 130, 129, 128, 127, 126, 125, 124, 123, 122, 121, 120, 119, 118, 117, 116, 115, 114, 113, 112, 111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 6, 5, 4, 3, 2, 1], "missings": [true, true, true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false], "labels_de": ["[-8] Frage in diesem Jahr nicht Teil des Frageprogramms", "[-7] Nur in weniger eingeschr\u00e4nkter Edition verf\u00fcgbar", "[-6] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] in Fragebogenversion nicht enthalten", "[-4] Unzulaessige Mehrfachantwort", "[-3] nicht valide", "[-2] trifft nicht zu", "[-1] keine Angabe", "[1] Deutschland", "[2] Tuerkei", "[3] Ex-Jugoslawien", "[4] Griechenland", "[5] Italien", "[6] Spanien", "[10] Oesterreich", "[11] Frankreich", "[12] Benelux", "[13] Daenemark", "[14] Grossbritannien", "[15] Schweden", "[16] Norwegen", "[17] Finnland", "[18] USA", "[19] Schweiz", "[20] Chile", "[21] Rumaenien", "[22] Polen", "[23] Korea", "[24] Iran", "[25] Indonesien", "[26] Ungarn", "[27] Bolivien", "[28] Portugal", "[29] Bulgarien", "[30] Syrien", "[31] Tschechien", "[32] Russland", "[33] Kurdistan", "[34] Mexiko", "[35] Argentinien", "[36] Cap Verden", "[37] Benin", "[38] Philippinen", "[39] Israel", "[40] Japan", "[41] Australien", "[42] Indien", "[43] Afghanistan", "[44] Thailand", "[45] Jamaika", "[46] Saudi-Arabien", "[47] Aethiopien", "[48] Kolumbien", "[49] Ghana", "[50] Bangla Desh", "[51] Venezuela", "[52] Tunesien", "[53] Mauritius", "[54] Nigeria", "[55] Kanada", "[56] Neuseeland", "[57] Tansania", "[58] Zypern", "[59] Kuba", "[60] Irak", "[61] Brasilien", "[62] Monaco", "[63] Hongkong", "[64] Peru", "[65] Sri Lanka", "[66] Nepal", "[67] Marokko", "[68] China", "[69] Liechtenstein", "[70] Island", "[71] Irland", "[72] St. Lucia", "[73] Moldawien", "[74] Kasachstan", "[75] Albanien", "[76] Libanon", "[77] Kirgistan", "[78] Ukraine", "[79] Algerien", "[80] Mocambique", "[81] Aegypten", "[82] Tadschikistan", "[83] Vietnam", "[84] Somalia", "[85] Pakistan", "[86] Suedafrika", "[87] Vereinigte Arabische Emirate", "[88] El Salvador", "[89] Eritrea", "[90] Jordanien", "[91] Turkmenistan-UdSSR (bis 1991)", "[92] Costa Rica", "[93] Singapur", "[94] Burkina Faso", "[95] Sambia", "[96] Ecuador", "[97] Usbekistan", "[98] Staatenlos", "[99] Puerto Rico", "[100] Laos", "[101] Estland", "[102] Angola", "[103] Lettland", "[104] Malaysia", "[105] Namibia", "[106] Montenegro", "[107] Belize", "[108] Dominikanische Republik", "[109] Nicaragua", "[110] Kenia", "[111] Libyen", "[112] Malta", "[113] Botswana", "[114] Haiti", "[115] Trinidad Tobago", "[116] Luxemburg", "[117] Belgien", "[118] Niederlande", "[119] Kroatien", "[120] Bosnien/Herzegowina", "[121] Makedonien", "[122] Slowenien", "[123] Slowakei", "[124] Paraguay", "[125] Guinea", "[126] Kuwait", "[127] Elfenbeinkueste", "[128] Malaysia", "[129] Samoa", "[130] Aserbaidschan", "[131] Seychellen", "[132] Weissrussland", "[133] Uruguay", "[134] Bahamas", "[135] Uganda", "[136] Oman", "[137] Mikronesien", "[138] Mali", "[139] Kamerun", "[140] Kosovo-Albaner", "[141] Georgien", "[142] Sudan", "[143] Kongo", "[144] Togo", "[145] Mongolei", "[146] Litauen", "[147] Tschad", "[148] Armenien", "[149] Kurdistan", "[150] Liberia", "[151] Jemen", "[152] Palaestina", "[153] Freistaat Danzig", "[154] Taiwan", "[155] Turkmenistan", "[156] Afrika", "[157] Guatemala", "[158] Sierra Leone(Westafrika)", "[159] Panama", "[160] Osttimor", "[161] Bahrain", "[162] Senegal", "[163] Malediven", "[164] Hawaii", "[165] Serbien", "[166] Gambia", "[167] Honduras", "[168] Montenegro", "[169] Kambodscha", "[170] Surinam", "[171] Guyana", "[172] Kaukasus", "[173] Simbabwe", "[174] Madagaskar", "[175] Grenada", "[176] Lesotho", "[177] Bhutan", "[178] Ruanda", "[179] Malawi", "[180] Bessarabien", "[181] Myanmar", "[183] Niger", "[188] Tschetschenien", "[195] Inguschetien", "[196] Kosovo", "[222] Eastern Europe", "[333] sonst. unspez. Ausland", "[999] ethnische Minderheiten (z.B. Jesiden Roma)"], "frequencies": [27185, 0, 0, 6250, 0, 0, 527400, 129, 2, 0, 0, 104, 6, 35, 9, 1, 0, 0, 2, 0, 0, 0, 0, 7, 1, 0, 0, 4, 50, 4, 66, 1048, 1, 0, 4, 0, 0, 0, 7, 0, 1, 4, 30, 0, 138, 19, 0, 20, 150, 17, 131, 9, 53, 36, 21, 83, 1301, 70, 11, 0, 0, 10, 0, 7, 159, 1, 196, 7, 11, 5, 0, 44, 1, 164, 214, 657, 1274, 2094, 728, 149, 98, 0, 0, 1, 0, 18, 33, 0, 14, 0, 0, 4, 0, 73, 35, 3, 0, 0, 589, 24, 3, 3, 10, 0, 6, 0, 27, 952, 9, 0, 14, 408, 285, 118, 16, 75, 5, 44, 842, 67, 242, 330, 378, 36, 1, 39, 0, 0, 108, 239, 14, 127, 43, 0, 0, 152, 2832, 56, 0, 0, 19, 81, 225, 5, 110, 20, 56, 117, 65, 90, 3, 12, 189, 2516, 176, 18, 68, 15, 119, 1, 1, 18, 49, 0, 1692, 253, 9995, 599, 475, 16, 535, 52, 508, 37, 2362, 1606, 41, 255, 620, 98, 34, 94, 573, 170, 78, 685, 1419, 2121, 7050, 4362, 2358, 13389, 78402]}}}, "baskets": {}}</script>
+    <h1><i class="fa fa-chart-bar" title="Variable"></i>
+        pl/plj0014_v1: [de] Staatsangehoerigkeit  [1984-1993,1996-2019]
+    </h1>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="btn-toolbar" role="toolbar" aria-label="...">
+                <div class="btn-group btn-group-sm float-right" id="chart_nav_dropdown"
+                     role="group"></div>
+                <div class="btn-group btn-group-sm float-right" role="group" aria-label="..."
+                     id="vis_menu">
+                    <a type="button" class="btn opt chart_nav" id="percent">Percent</a>
+                    <a type="button" class="btn opt chart_nav"
+                       id="missings">Hide Missings</a>
+                </div>
+            </div>
+            <div id="menu"></div>
+            <div id="chart"></div>
+            <div id="chart_missings"></div>
+            
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="nav-item"
+                        title="Variables with the same concept">
+                        <a href="#related_variables"
+                        aria-controls="related_variables"
+                            data-toggle="tab"
+                            class="nav-link active"
+                        >
+                            Related variables
+                            <span class="badge badge-secondary">
+                                1
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a href="#origin_variables"
+                           aria-controls="origin_variables"
+                           data-toggle="tab"
+                           class="nav-link"
+                        >
+                            Input variables
+                            <span class="badge badge-secondary">
+                                35
+                            </span>
+                    </a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a href="#target_variables"
+                           aria-controls="target_variables"
+                           data-toggle="tab"
+                           class="nav-link"
+                        >
+                            Output variables
+                            <span class="badge badge-secondary">
+                                0
+                            </span>
+                    </a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="related_variables">
+                        
+<div class="card">
+    
+    <div class="card-body">
+        <div class="row">
+            
+                <div class="col-lg-3">
+                    0:
+                    <br>
+                    
+                        <a href="/soep-core/data/pl/plj0014_v1">
+                            pl/plj0014_v1
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1984:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1985:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1986:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1987:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1988:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1989:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1990:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1991:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1992:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1993:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1994:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1995:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1996:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1997:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1998:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1999:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2000:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2001:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2002:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2003:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2004:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2005:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2006:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2007:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2008:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2009:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2010:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2011:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2012:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2013:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2014:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2015:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2016:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2017:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2018:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2019:
+                    <br>
+                    
+                </div>
+                
+            
+            </div>
+    </div>
+</div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="origin_variables">
+                        
+                            
+                                
+<div class="card">
+    
+        <div class="card-header"><b>Soep-Core</b>
+        </div>
+    
+    <div class="card-body">
+        <div class="row">
+            
+                <div class="col-lg-3">
+                    0:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1984:
+                    <br>
+                    
+                        <a href="/soep-core/data/ap/ap61">
+                            ap/ap61
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1985:
+                    <br>
+                    
+                        <a href="/soep-core/data/bp/bp89">
+                            bp/bp89
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1986:
+                    <br>
+                    
+                        <a href="/soep-core/data/cp/cp92">
+                            cp/cp92
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1987:
+                    <br>
+                    
+                        <a href="/soep-core/data/dp/dp94">
+                            dp/dp94
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1988:
+                    <br>
+                    
+                        <a href="/soep-core/data/ep/ep87b">
+                            ep/ep87b
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1989:
+                    <br>
+                    
+                        <a href="/soep-core/data/fp/fp107b">
+                            fp/fp107b
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1990:
+                    <br>
+                    
+                        <a href="/soep-core/data/gp/gp107">
+                            gp/gp107
+                        </a>
+                        <br>
+                    
+                        <a href="/soep-core/data/gpost/gp63e">
+                            gpost/gp63e
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1991:
+                    <br>
+                    
+                        <a href="/soep-core/data/hp/hp107">
+                            hp/hp107
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1992:
+                    <br>
+                    
+                        <a href="/soep-core/data/ip/ip107">
+                            ip/ip107
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1993:
+                    <br>
+                    
+                        <a href="/soep-core/data/jp/jp107">
+                            jp/jp107
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1994:
+                    <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1995:
+                    <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1996:
+                    <br>
+                    
+                        <a href="/soep-core/data/mp/mp91a">
+                            mp/mp91a
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1997:
+                    <br>
+                    
+                        <a href="/soep-core/data/np/np10002">
+                            np/np10002
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    1998:
+                    <br>
+                    
+                        <a href="/soep-core/data/op/op10202">
+                            op/op10202
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    1999:
+                    <br>
+                    
+                        <a href="/soep-core/data/pp/pp11602">
+                            pp/pp11602
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2000:
+                    <br>
+                    
+                        <a href="/soep-core/data/qp/qp123">
+                            qp/qp123
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2001:
+                    <br>
+                    
+                        <a href="/soep-core/data/rp/rp119">
+                            rp/rp119
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2002:
+                    <br>
+                    
+                        <a href="/soep-core/data/sp/sp11902">
+                            sp/sp11902
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2003:
+                    <br>
+                    
+                        <a href="/soep-core/data/tp/tp125">
+                            tp/tp125
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2004:
+                    <br>
+                    
+                        <a href="/soep-core/data/up/up129">
+                            up/up129
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2005:
+                    <br>
+                    
+                        <a href="/soep-core/data/vp/vp138">
+                            vp/vp138
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2006:
+                    <br>
+                    
+                        <a href="/soep-core/data/wp/wp130">
+                            wp/wp130
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2007:
+                    <br>
+                    
+                        <a href="/soep-core/data/xp/xp142">
+                            xp/xp142
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2008:
+                    <br>
+                    
+                        <a href="/soep-core/data/yp/yp140">
+                            yp/yp140
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2009:
+                    <br>
+                    
+                        <a href="/soep-core/data/zp/zp140">
+                            zp/zp140
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2010:
+                    <br>
+                    
+                        <a href="/soep-core/data/bap/bap138">
+                            bap/bap138
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2011:
+                    <br>
+                    
+                        <a href="/soep-core/data/bbp/bbp143">
+                            bbp/bbp143
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2012:
+                    <br>
+                    
+                        <a href="/soep-core/data/bcp/bcp143">
+                            bcp/bcp143
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2013:
+                    <br>
+                    
+                        <a href="/soep-core/data/bdp/bdp147">
+                            bdp/bdp147
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2014:
+                    <br>
+                    
+                        <a href="/soep-core/data/bep/bep133">
+                            bep/bep133
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2015:
+                    <br>
+                    
+                        <a href="/soep-core/data/bfp/bfp16202">
+                            bfp/bfp16202
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2016:
+                    <br>
+                    
+                        <a href="/soep-core/data/bgp/bgp16202">
+                            bgp/bgp16202
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2017:
+                    <br>
+                    
+                        <a href="/soep-core/data/bhp/bhp_200_02">
+                            bhp/bhp_200_02
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    2018:
+                    <br>
+                    
+                        <a href="/soep-core/data/bip/bip_182_02">
+                            bip/bip_182_02
+                        </a>
+                        <br>
+                    
+                </div>
+                
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                
+            
+                <div class="col-lg-3">
+                    2019:
+                    <br>
+                    
+                        <a href="/soep-core/data/bjp/bjp_178_02">
+                            bjp/bjp_178_02
+                        </a>
+                        <br>
+                    
+                </div>
+                
+            
+                <div class="col-lg-3">
+                    none:
+                    <br>
+                    
+                </div>
+                
+            
+            </div>
+    </div>
+</div>
+                            
+                        
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="target_variables">
+                        
+                            <div class="card bg-light card-body mb-3">No output variables</div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+                <div class="card">
+    <div class="card-header">Value Labels</div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>en</th>
+            
+                <th>
+                    de
+                </th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>
+                    1
+                </th>
+                
+                    <td>
+                        [1] [de] Deutschland
+                    </td>
+                
+                    <td>
+                        [1] Deutschland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    2
+                </th>
+                
+                    <td>
+                        [2] [de] Tuerkei
+                    </td>
+                
+                    <td>
+                        [2] Tuerkei
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    3
+                </th>
+                
+                    <td>
+                        [3] [de] Ex-Jugoslawien
+                    </td>
+                
+                    <td>
+                        [3] Ex-Jugoslawien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    4
+                </th>
+                
+                    <td>
+                        [4] [de] Griechenland
+                    </td>
+                
+                    <td>
+                        [4] Griechenland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    5
+                </th>
+                
+                    <td>
+                        [5] [de] Italien
+                    </td>
+                
+                    <td>
+                        [5] Italien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    6
+                </th>
+                
+                    <td>
+                        [6] [de] Spanien
+                    </td>
+                
+                    <td>
+                        [6] Spanien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    10
+                </th>
+                
+                    <td>
+                        [10] [de] Oesterreich
+                    </td>
+                
+                    <td>
+                        [10] Oesterreich
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    11
+                </th>
+                
+                    <td>
+                        [11] [de] Frankreich
+                    </td>
+                
+                    <td>
+                        [11] Frankreich
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    12
+                </th>
+                
+                    <td>
+                        [12] [de] Benelux
+                    </td>
+                
+                    <td>
+                        [12] Benelux
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    13
+                </th>
+                
+                    <td>
+                        [13] [de] Daenemark
+                    </td>
+                
+                    <td>
+                        [13] Daenemark
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    14
+                </th>
+                
+                    <td>
+                        [14] [de] Grossbritannien
+                    </td>
+                
+                    <td>
+                        [14] Grossbritannien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    15
+                </th>
+                
+                    <td>
+                        [15] [de] Schweden
+                    </td>
+                
+                    <td>
+                        [15] Schweden
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    16
+                </th>
+                
+                    <td>
+                        [16] [de] Norwegen
+                    </td>
+                
+                    <td>
+                        [16] Norwegen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    17
+                </th>
+                
+                    <td>
+                        [17] [de] Finnland
+                    </td>
+                
+                    <td>
+                        [17] Finnland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    18
+                </th>
+                
+                    <td>
+                        [18] [de] USA
+                    </td>
+                
+                    <td>
+                        [18] USA
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    19
+                </th>
+                
+                    <td>
+                        [19] [de] Schweiz
+                    </td>
+                
+                    <td>
+                        [19] Schweiz
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    20
+                </th>
+                
+                    <td>
+                        [20] [de] Chile
+                    </td>
+                
+                    <td>
+                        [20] Chile
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    21
+                </th>
+                
+                    <td>
+                        [21] [de] Rumaenien
+                    </td>
+                
+                    <td>
+                        [21] Rumaenien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    22
+                </th>
+                
+                    <td>
+                        [22] [de] Polen
+                    </td>
+                
+                    <td>
+                        [22] Polen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    23
+                </th>
+                
+                    <td>
+                        [23] [de] Korea
+                    </td>
+                
+                    <td>
+                        [23] Korea
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    24
+                </th>
+                
+                    <td>
+                        [24] [de] Iran
+                    </td>
+                
+                    <td>
+                        [24] Iran
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    25
+                </th>
+                
+                    <td>
+                        [25] [de] Indonesien
+                    </td>
+                
+                    <td>
+                        [25] Indonesien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    26
+                </th>
+                
+                    <td>
+                        [26] [de] Ungarn
+                    </td>
+                
+                    <td>
+                        [26] Ungarn
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    27
+                </th>
+                
+                    <td>
+                        [27] [de] Bolivien
+                    </td>
+                
+                    <td>
+                        [27] Bolivien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    28
+                </th>
+                
+                    <td>
+                        [28] [de] Portugal
+                    </td>
+                
+                    <td>
+                        [28] Portugal
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    29
+                </th>
+                
+                    <td>
+                        [29] [de] Bulgarien
+                    </td>
+                
+                    <td>
+                        [29] Bulgarien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    30
+                </th>
+                
+                    <td>
+                        [30] [de] Syrien
+                    </td>
+                
+                    <td>
+                        [30] Syrien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    31
+                </th>
+                
+                    <td>
+                        [31] [de] Tschechien
+                    </td>
+                
+                    <td>
+                        [31] Tschechien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    32
+                </th>
+                
+                    <td>
+                        [32] [de] Russland
+                    </td>
+                
+                    <td>
+                        [32] Russland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    33
+                </th>
+                
+                    <td>
+                        [33] [de] Kurdistan
+                    </td>
+                
+                    <td>
+                        [33] Kurdistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    34
+                </th>
+                
+                    <td>
+                        [34] [de] Mexiko
+                    </td>
+                
+                    <td>
+                        [34] Mexiko
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    35
+                </th>
+                
+                    <td>
+                        [35] [de] Argentinien
+                    </td>
+                
+                    <td>
+                        [35] Argentinien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    36
+                </th>
+                
+                    <td>
+                        [36] [de] Cap Verden
+                    </td>
+                
+                    <td>
+                        [36] Cap Verden
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    37
+                </th>
+                
+                    <td>
+                        [37] [de] Benin
+                    </td>
+                
+                    <td>
+                        [37] Benin
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    38
+                </th>
+                
+                    <td>
+                        [38] [de] Philippinen
+                    </td>
+                
+                    <td>
+                        [38] Philippinen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    39
+                </th>
+                
+                    <td>
+                        [39] [de] Israel
+                    </td>
+                
+                    <td>
+                        [39] Israel
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    40
+                </th>
+                
+                    <td>
+                        [40] [de] Japan
+                    </td>
+                
+                    <td>
+                        [40] Japan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    41
+                </th>
+                
+                    <td>
+                        [41] [de] Australien
+                    </td>
+                
+                    <td>
+                        [41] Australien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    42
+                </th>
+                
+                    <td>
+                        [42] [de] Indien
+                    </td>
+                
+                    <td>
+                        [42] Indien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    43
+                </th>
+                
+                    <td>
+                        [43] [de] Afghanistan
+                    </td>
+                
+                    <td>
+                        [43] Afghanistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    44
+                </th>
+                
+                    <td>
+                        [44] [de] Thailand
+                    </td>
+                
+                    <td>
+                        [44] Thailand
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    45
+                </th>
+                
+                    <td>
+                        [45] [de] Jamaika
+                    </td>
+                
+                    <td>
+                        [45] Jamaika
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    46
+                </th>
+                
+                    <td>
+                        [46] [de] Saudi-Arabien
+                    </td>
+                
+                    <td>
+                        [46] Saudi-Arabien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    47
+                </th>
+                
+                    <td>
+                        [47] [de] Aethiopien
+                    </td>
+                
+                    <td>
+                        [47] Aethiopien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    48
+                </th>
+                
+                    <td>
+                        [48] [de] Kolumbien
+                    </td>
+                
+                    <td>
+                        [48] Kolumbien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    49
+                </th>
+                
+                    <td>
+                        [49] [de] Ghana
+                    </td>
+                
+                    <td>
+                        [49] Ghana
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    50
+                </th>
+                
+                    <td>
+                        [50] [de] Bangla Desh
+                    </td>
+                
+                    <td>
+                        [50] Bangla Desh
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    51
+                </th>
+                
+                    <td>
+                        [51] [de] Venezuela
+                    </td>
+                
+                    <td>
+                        [51] Venezuela
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    52
+                </th>
+                
+                    <td>
+                        [52] [de] Tunesien
+                    </td>
+                
+                    <td>
+                        [52] Tunesien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    53
+                </th>
+                
+                    <td>
+                        [53] [de] Mauritius
+                    </td>
+                
+                    <td>
+                        [53] Mauritius
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    54
+                </th>
+                
+                    <td>
+                        [54] [de] Nigeria
+                    </td>
+                
+                    <td>
+                        [54] Nigeria
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    55
+                </th>
+                
+                    <td>
+                        [55] [de] Kanada
+                    </td>
+                
+                    <td>
+                        [55] Kanada
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    56
+                </th>
+                
+                    <td>
+                        [56] [de] Neuseeland
+                    </td>
+                
+                    <td>
+                        [56] Neuseeland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    57
+                </th>
+                
+                    <td>
+                        [57] [de] Tansania
+                    </td>
+                
+                    <td>
+                        [57] Tansania
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    58
+                </th>
+                
+                    <td>
+                        [58] [de] Zypern
+                    </td>
+                
+                    <td>
+                        [58] Zypern
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    59
+                </th>
+                
+                    <td>
+                        [59] [de] Kuba
+                    </td>
+                
+                    <td>
+                        [59] Kuba
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    60
+                </th>
+                
+                    <td>
+                        [60] [de] Irak
+                    </td>
+                
+                    <td>
+                        [60] Irak
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    61
+                </th>
+                
+                    <td>
+                        [61] [de] Brasilien
+                    </td>
+                
+                    <td>
+                        [61] Brasilien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    62
+                </th>
+                
+                    <td>
+                        [62] [de] Monaco
+                    </td>
+                
+                    <td>
+                        [62] Monaco
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    63
+                </th>
+                
+                    <td>
+                        [63] [de] Hongkong
+                    </td>
+                
+                    <td>
+                        [63] Hongkong
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    64
+                </th>
+                
+                    <td>
+                        [64] [de] Peru
+                    </td>
+                
+                    <td>
+                        [64] Peru
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    65
+                </th>
+                
+                    <td>
+                        [65] [de] Sri Lanka
+                    </td>
+                
+                    <td>
+                        [65] Sri Lanka
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    66
+                </th>
+                
+                    <td>
+                        [66] [de] Nepal
+                    </td>
+                
+                    <td>
+                        [66] Nepal
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    67
+                </th>
+                
+                    <td>
+                        [67] [de] Marokko
+                    </td>
+                
+                    <td>
+                        [67] Marokko
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    68
+                </th>
+                
+                    <td>
+                        [68] [de] China
+                    </td>
+                
+                    <td>
+                        [68] China
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    69
+                </th>
+                
+                    <td>
+                        [69] [de] Liechtenstein
+                    </td>
+                
+                    <td>
+                        [69] Liechtenstein
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    70
+                </th>
+                
+                    <td>
+                        [70] [de] Island
+                    </td>
+                
+                    <td>
+                        [70] Island
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    71
+                </th>
+                
+                    <td>
+                        [71] [de] Irland
+                    </td>
+                
+                    <td>
+                        [71] Irland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    72
+                </th>
+                
+                    <td>
+                        [72] [de] St. Lucia
+                    </td>
+                
+                    <td>
+                        [72] St. Lucia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    73
+                </th>
+                
+                    <td>
+                        [73] [de] Moldawien
+                    </td>
+                
+                    <td>
+                        [73] Moldawien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    74
+                </th>
+                
+                    <td>
+                        [74] [de] Kasachstan
+                    </td>
+                
+                    <td>
+                        [74] Kasachstan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    75
+                </th>
+                
+                    <td>
+                        [75] [de] Albanien
+                    </td>
+                
+                    <td>
+                        [75] Albanien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    76
+                </th>
+                
+                    <td>
+                        [76] [de] Libanon
+                    </td>
+                
+                    <td>
+                        [76] Libanon
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    77
+                </th>
+                
+                    <td>
+                        [77] [de] Kirgistan
+                    </td>
+                
+                    <td>
+                        [77] Kirgistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    78
+                </th>
+                
+                    <td>
+                        [78] [de] Ukraine
+                    </td>
+                
+                    <td>
+                        [78] Ukraine
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    79
+                </th>
+                
+                    <td>
+                        [79] [de] Algerien
+                    </td>
+                
+                    <td>
+                        [79] Algerien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    80
+                </th>
+                
+                    <td>
+                        [80] [de] Mocambique
+                    </td>
+                
+                    <td>
+                        [80] Mocambique
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    81
+                </th>
+                
+                    <td>
+                        [81] [de] Aegypten
+                    </td>
+                
+                    <td>
+                        [81] Aegypten
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    82
+                </th>
+                
+                    <td>
+                        [82] [de] Tadschikistan
+                    </td>
+                
+                    <td>
+                        [82] Tadschikistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    83
+                </th>
+                
+                    <td>
+                        [83] [de] Vietnam
+                    </td>
+                
+                    <td>
+                        [83] Vietnam
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    84
+                </th>
+                
+                    <td>
+                        [84] [de] Somalia
+                    </td>
+                
+                    <td>
+                        [84] Somalia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    85
+                </th>
+                
+                    <td>
+                        [85] [de] Pakistan
+                    </td>
+                
+                    <td>
+                        [85] Pakistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    86
+                </th>
+                
+                    <td>
+                        [86] [de] Suedafrika
+                    </td>
+                
+                    <td>
+                        [86] Suedafrika
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    87
+                </th>
+                
+                    <td>
+                        [87] [de] Vereinigte Arabische Emirate
+                    </td>
+                
+                    <td>
+                        [87] Vereinigte Arabische Emirate
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    88
+                </th>
+                
+                    <td>
+                        [88] [de] El Salvador
+                    </td>
+                
+                    <td>
+                        [88] El Salvador
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    89
+                </th>
+                
+                    <td>
+                        [89] [de] Eritrea
+                    </td>
+                
+                    <td>
+                        [89] Eritrea
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    90
+                </th>
+                
+                    <td>
+                        [90] [de] Jordanien
+                    </td>
+                
+                    <td>
+                        [90] Jordanien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    91
+                </th>
+                
+                    <td>
+                        [91] [de] Turkmenistan-UdSSR (bis 1991)
+                    </td>
+                
+                    <td>
+                        [91] Turkmenistan-UdSSR (bis 1991)
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    92
+                </th>
+                
+                    <td>
+                        [92] [de] Costa Rica
+                    </td>
+                
+                    <td>
+                        [92] Costa Rica
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    93
+                </th>
+                
+                    <td>
+                        [93] [de] Singapur
+                    </td>
+                
+                    <td>
+                        [93] Singapur
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    94
+                </th>
+                
+                    <td>
+                        [94] [de] Burkina Faso
+                    </td>
+                
+                    <td>
+                        [94] Burkina Faso
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    95
+                </th>
+                
+                    <td>
+                        [95] [de] Sambia
+                    </td>
+                
+                    <td>
+                        [95] Sambia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    96
+                </th>
+                
+                    <td>
+                        [96] [de] Ecuador
+                    </td>
+                
+                    <td>
+                        [96] Ecuador
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    97
+                </th>
+                
+                    <td>
+                        [97] [de] Usbekistan
+                    </td>
+                
+                    <td>
+                        [97] Usbekistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    98
+                </th>
+                
+                    <td>
+                        [98] [de] Staatenlos
+                    </td>
+                
+                    <td>
+                        [98] Staatenlos
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    99
+                </th>
+                
+                    <td>
+                        [99] [de] Puerto Rico
+                    </td>
+                
+                    <td>
+                        [99] Puerto Rico
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    100
+                </th>
+                
+                    <td>
+                        [100] [de] Laos
+                    </td>
+                
+                    <td>
+                        [100] Laos
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    101
+                </th>
+                
+                    <td>
+                        [101] [de] Estland
+                    </td>
+                
+                    <td>
+                        [101] Estland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    102
+                </th>
+                
+                    <td>
+                        [102] [de] Angola
+                    </td>
+                
+                    <td>
+                        [102] Angola
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    103
+                </th>
+                
+                    <td>
+                        [103] [de] Lettland
+                    </td>
+                
+                    <td>
+                        [103] Lettland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    104
+                </th>
+                
+                    <td>
+                        [104] [de] Malaysia
+                    </td>
+                
+                    <td>
+                        [104] Malaysia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    105
+                </th>
+                
+                    <td>
+                        [105] [de] Namibia
+                    </td>
+                
+                    <td>
+                        [105] Namibia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    106
+                </th>
+                
+                    <td>
+                        [106] [de] Montenegro
+                    </td>
+                
+                    <td>
+                        [106] Montenegro
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    107
+                </th>
+                
+                    <td>
+                        [107] [de] Belize
+                    </td>
+                
+                    <td>
+                        [107] Belize
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    108
+                </th>
+                
+                    <td>
+                        [108] [de] Dominikanische Republik
+                    </td>
+                
+                    <td>
+                        [108] Dominikanische Republik
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    109
+                </th>
+                
+                    <td>
+                        [109] [de] Nicaragua
+                    </td>
+                
+                    <td>
+                        [109] Nicaragua
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    110
+                </th>
+                
+                    <td>
+                        [110] [de] Kenia
+                    </td>
+                
+                    <td>
+                        [110] Kenia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    111
+                </th>
+                
+                    <td>
+                        [111] [de] Libyen
+                    </td>
+                
+                    <td>
+                        [111] Libyen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    112
+                </th>
+                
+                    <td>
+                        [112] [de] Malta
+                    </td>
+                
+                    <td>
+                        [112] Malta
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    113
+                </th>
+                
+                    <td>
+                        [113] [de] Botswana
+                    </td>
+                
+                    <td>
+                        [113] Botswana
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    114
+                </th>
+                
+                    <td>
+                        [114] [de] Haiti
+                    </td>
+                
+                    <td>
+                        [114] Haiti
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    115
+                </th>
+                
+                    <td>
+                        [115] [de] Trinidad Tobago
+                    </td>
+                
+                    <td>
+                        [115] Trinidad Tobago
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    116
+                </th>
+                
+                    <td>
+                        [116] [de] Luxemburg
+                    </td>
+                
+                    <td>
+                        [116] Luxemburg
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    117
+                </th>
+                
+                    <td>
+                        [117] [de] Belgien
+                    </td>
+                
+                    <td>
+                        [117] Belgien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    118
+                </th>
+                
+                    <td>
+                        [118] [de] Niederlande
+                    </td>
+                
+                    <td>
+                        [118] Niederlande
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    119
+                </th>
+                
+                    <td>
+                        [119] [de] Kroatien
+                    </td>
+                
+                    <td>
+                        [119] Kroatien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    120
+                </th>
+                
+                    <td>
+                        [120] [de] Bosnien/Herzegowina
+                    </td>
+                
+                    <td>
+                        [120] Bosnien/Herzegowina
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    121
+                </th>
+                
+                    <td>
+                        [121] [de] Makedonien
+                    </td>
+                
+                    <td>
+                        [121] Makedonien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    122
+                </th>
+                
+                    <td>
+                        [122] [de] Slowenien
+                    </td>
+                
+                    <td>
+                        [122] Slowenien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    123
+                </th>
+                
+                    <td>
+                        [123] [de] Slowakei
+                    </td>
+                
+                    <td>
+                        [123] Slowakei
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    124
+                </th>
+                
+                    <td>
+                        [124] [de] Paraguay
+                    </td>
+                
+                    <td>
+                        [124] Paraguay
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    125
+                </th>
+                
+                    <td>
+                        [125] [de] Guinea
+                    </td>
+                
+                    <td>
+                        [125] Guinea
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    126
+                </th>
+                
+                    <td>
+                        [126] [de] Kuwait
+                    </td>
+                
+                    <td>
+                        [126] Kuwait
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    127
+                </th>
+                
+                    <td>
+                        [127] [de] Elfenbeinkueste
+                    </td>
+                
+                    <td>
+                        [127] Elfenbeinkueste
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    128
+                </th>
+                
+                    <td>
+                        [128] [de] Malaysia
+                    </td>
+                
+                    <td>
+                        [128] Malaysia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    129
+                </th>
+                
+                    <td>
+                        [129] [de] Samoa
+                    </td>
+                
+                    <td>
+                        [129] Samoa
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    130
+                </th>
+                
+                    <td>
+                        [130] [de] Aserbaidschan
+                    </td>
+                
+                    <td>
+                        [130] Aserbaidschan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    131
+                </th>
+                
+                    <td>
+                        [131] [de] Seychellen
+                    </td>
+                
+                    <td>
+                        [131] Seychellen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    132
+                </th>
+                
+                    <td>
+                        [132] [de] Weissrussland
+                    </td>
+                
+                    <td>
+                        [132] Weissrussland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    133
+                </th>
+                
+                    <td>
+                        [133] [de] Uruguay
+                    </td>
+                
+                    <td>
+                        [133] Uruguay
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    134
+                </th>
+                
+                    <td>
+                        [134] [de] Bahamas
+                    </td>
+                
+                    <td>
+                        [134] Bahamas
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    135
+                </th>
+                
+                    <td>
+                        [135] [de] Uganda
+                    </td>
+                
+                    <td>
+                        [135] Uganda
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    136
+                </th>
+                
+                    <td>
+                        [136] [de] Oman
+                    </td>
+                
+                    <td>
+                        [136] Oman
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    137
+                </th>
+                
+                    <td>
+                        [137] [de] Mikronesien
+                    </td>
+                
+                    <td>
+                        [137] Mikronesien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    138
+                </th>
+                
+                    <td>
+                        [138] [de] Mali
+                    </td>
+                
+                    <td>
+                        [138] Mali
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    139
+                </th>
+                
+                    <td>
+                        [139] [de] Kamerun
+                    </td>
+                
+                    <td>
+                        [139] Kamerun
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    140
+                </th>
+                
+                    <td>
+                        [140] [de] Kosovo-Albaner
+                    </td>
+                
+                    <td>
+                        [140] Kosovo-Albaner
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    141
+                </th>
+                
+                    <td>
+                        [141] [de] Georgien
+                    </td>
+                
+                    <td>
+                        [141] Georgien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    142
+                </th>
+                
+                    <td>
+                        [142] [de] Sudan
+                    </td>
+                
+                    <td>
+                        [142] Sudan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    143
+                </th>
+                
+                    <td>
+                        [143] [de] Kongo
+                    </td>
+                
+                    <td>
+                        [143] Kongo
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    144
+                </th>
+                
+                    <td>
+                        [144] [de] Togo
+                    </td>
+                
+                    <td>
+                        [144] Togo
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    145
+                </th>
+                
+                    <td>
+                        [145] [de] Mongolei
+                    </td>
+                
+                    <td>
+                        [145] Mongolei
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    146
+                </th>
+                
+                    <td>
+                        [146] [de] Litauen
+                    </td>
+                
+                    <td>
+                        [146] Litauen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    147
+                </th>
+                
+                    <td>
+                        [147] [de] Tschad
+                    </td>
+                
+                    <td>
+                        [147] Tschad
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    148
+                </th>
+                
+                    <td>
+                        [148] [de] Armenien
+                    </td>
+                
+                    <td>
+                        [148] Armenien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    149
+                </th>
+                
+                    <td>
+                        [149] [de] Kurdistan
+                    </td>
+                
+                    <td>
+                        [149] Kurdistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    150
+                </th>
+                
+                    <td>
+                        [150] [de] Liberia
+                    </td>
+                
+                    <td>
+                        [150] Liberia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    151
+                </th>
+                
+                    <td>
+                        [151] [de] Jemen
+                    </td>
+                
+                    <td>
+                        [151] Jemen
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    152
+                </th>
+                
+                    <td>
+                        [152] [de] Palaestina
+                    </td>
+                
+                    <td>
+                        [152] Palaestina
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    153
+                </th>
+                
+                    <td>
+                        [153] [de] Freistaat Danzig
+                    </td>
+                
+                    <td>
+                        [153] Freistaat Danzig
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    154
+                </th>
+                
+                    <td>
+                        [154] [de] Taiwan
+                    </td>
+                
+                    <td>
+                        [154] Taiwan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    155
+                </th>
+                
+                    <td>
+                        [155] [de] Turkmenistan
+                    </td>
+                
+                    <td>
+                        [155] Turkmenistan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    156
+                </th>
+                
+                    <td>
+                        [156] [de] Afrika
+                    </td>
+                
+                    <td>
+                        [156] Afrika
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    157
+                </th>
+                
+                    <td>
+                        [157] [de] Guatemala
+                    </td>
+                
+                    <td>
+                        [157] Guatemala
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    158
+                </th>
+                
+                    <td>
+                        [158] [de] Sierra Leone(Westafrika)
+                    </td>
+                
+                    <td>
+                        [158] Sierra Leone(Westafrika)
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    159
+                </th>
+                
+                    <td>
+                        [159] [de] Panama
+                    </td>
+                
+                    <td>
+                        [159] Panama
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    160
+                </th>
+                
+                    <td>
+                        [160] [de] Osttimor
+                    </td>
+                
+                    <td>
+                        [160] Osttimor
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    161
+                </th>
+                
+                    <td>
+                        [161] [de] Bahrain
+                    </td>
+                
+                    <td>
+                        [161] Bahrain
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    162
+                </th>
+                
+                    <td>
+                        [162] [de] Senegal
+                    </td>
+                
+                    <td>
+                        [162] Senegal
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    163
+                </th>
+                
+                    <td>
+                        [163] [de] Malediven
+                    </td>
+                
+                    <td>
+                        [163] Malediven
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    164
+                </th>
+                
+                    <td>
+                        [164] [de] Hawaii
+                    </td>
+                
+                    <td>
+                        [164] Hawaii
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    165
+                </th>
+                
+                    <td>
+                        [165] [de] Serbien
+                    </td>
+                
+                    <td>
+                        [165] Serbien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    166
+                </th>
+                
+                    <td>
+                        [166] [de] Gambia
+                    </td>
+                
+                    <td>
+                        [166] Gambia
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    167
+                </th>
+                
+                    <td>
+                        [167] [de] Honduras
+                    </td>
+                
+                    <td>
+                        [167] Honduras
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    168
+                </th>
+                
+                    <td>
+                        [168] [de] Montenegro
+                    </td>
+                
+                    <td>
+                        [168] Montenegro
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    169
+                </th>
+                
+                    <td>
+                        [169] [de] Kambodscha
+                    </td>
+                
+                    <td>
+                        [169] Kambodscha
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    170
+                </th>
+                
+                    <td>
+                        [170] [de] Surinam
+                    </td>
+                
+                    <td>
+                        [170] Surinam
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    171
+                </th>
+                
+                    <td>
+                        [171] [de] Guyana
+                    </td>
+                
+                    <td>
+                        [171] Guyana
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    172
+                </th>
+                
+                    <td>
+                        [172] [de] Kaukasus
+                    </td>
+                
+                    <td>
+                        [172] Kaukasus
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    173
+                </th>
+                
+                    <td>
+                        [173] [de] Simbabwe
+                    </td>
+                
+                    <td>
+                        [173] Simbabwe
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    174
+                </th>
+                
+                    <td>
+                        [174] [de] Madagaskar
+                    </td>
+                
+                    <td>
+                        [174] Madagaskar
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    175
+                </th>
+                
+                    <td>
+                        [175] [de] Grenada
+                    </td>
+                
+                    <td>
+                        [175] Grenada
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    176
+                </th>
+                
+                    <td>
+                        [176] [de] Lesotho
+                    </td>
+                
+                    <td>
+                        [176] Lesotho
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    177
+                </th>
+                
+                    <td>
+                        [177] [de] Bhutan
+                    </td>
+                
+                    <td>
+                        [177] Bhutan
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    178
+                </th>
+                
+                    <td>
+                        [178] [de] Ruanda
+                    </td>
+                
+                    <td>
+                        [178] Ruanda
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    179
+                </th>
+                
+                    <td>
+                        [179] [de] Malawi
+                    </td>
+                
+                    <td>
+                        [179] Malawi
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    180
+                </th>
+                
+                    <td>
+                        [180] [de] Bessarabien
+                    </td>
+                
+                    <td>
+                        [180] Bessarabien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    181
+                </th>
+                
+                    <td>
+                        [181] [de] Myanmar
+                    </td>
+                
+                    <td>
+                        [181] Myanmar
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    183
+                </th>
+                
+                    <td>
+                        [183] [de] Niger
+                    </td>
+                
+                    <td>
+                        [183] Niger
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    188
+                </th>
+                
+                    <td>
+                        [188] [de] Tschetschenien
+                    </td>
+                
+                    <td>
+                        [188] Tschetschenien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    195
+                </th>
+                
+                    <td>
+                        [195] [de] Inguschetien
+                    </td>
+                
+                    <td>
+                        [195] Inguschetien
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    196
+                </th>
+                
+                    <td>
+                        [196] [de] Kosovo
+                    </td>
+                
+                    <td>
+                        [196] Kosovo
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    222
+                </th>
+                
+                    <td>
+                        [222] [de] Eastern Europe
+                    </td>
+                
+                    <td>
+                        [222] Eastern Europe
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    333
+                </th>
+                
+                    <td>
+                        [333] [de] sonst. unspez. Ausland
+                    </td>
+                
+                    <td>
+                        [333] sonst. unspez. Ausland
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    999
+                </th>
+                
+                    <td>
+                        [999] [de] ethnische Minderheiten (z.B. Jesiden Roma)
+                    </td>
+                
+                    <td>
+                        [999] ethnische Minderheiten (z.B. Jesiden Roma)
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -1
+                </th>
+                
+                    <td>
+                        [-1] [de] keine Angabe
+                    </td>
+                
+                    <td>
+                        [-1] keine Angabe
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -2
+                </th>
+                
+                    <td>
+                        [-2] [de] trifft nicht zu
+                    </td>
+                
+                    <td>
+                        [-2] trifft nicht zu
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -3
+                </th>
+                
+                    <td>
+                        [-3] [de] nicht valide
+                    </td>
+                
+                    <td>
+                        [-3] nicht valide
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -4
+                </th>
+                
+                    <td>
+                        [-4] [de] Unzulaessige Mehrfachantwort
+                    </td>
+                
+                    <td>
+                        [-4] Unzulaessige Mehrfachantwort
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -5
+                </th>
+                
+                    <td>
+                        [-5] [de] in Fragebogenversion nicht enthalten
+                    </td>
+                
+                    <td>
+                        [-5] in Fragebogenversion nicht enthalten
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -6
+                </th>
+                
+                    <td>
+                        [-6] [de] Fragebogenversion mit geaenderter Filterfuehrung
+                    </td>
+                
+                    <td>
+                        [-6] Fragebogenversion mit geaenderter Filterfuehrung
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -7
+                </th>
+                
+                    <td>
+                        [-7] Only available in less restricted edition
+                    </td>
+                
+                    <td>
+                        [-7] Nur in weniger eingeschränkter Edition verfügbar
+                    </td>
+                
+            </tr>
+        
+            <tr>
+                <th>
+                    -8
+                </th>
+                
+                    <td>
+                        [-8] [de] Frage in diesem Jahr nicht Teil des Frageprogramms
+                    </td>
+                
+                    <td>
+                        [-8] Frage in diesem Jahr nicht Teil des Frageprogramms
+                    </td>
+                
+            </tr>
+        
+        </tbody>
+    </table>
+</div>
+
+            
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header"><b>Basket</b>
+                </div>
+                <div class="list-group" id="basket-list">
+                    
+                        </div>
+                        <div class="card-body">Please <a href="/workspace/login/">login</a>
+                            or <a href="{% url 'workspace:register' %">register</a>
+                            to
+                            use the basket functionality.
+                    
+                </div>
+            </div>
+            <div class="card">
+    <div class="card-header"><b>Description</b>
+    </div>
+    <div class="card-body" id="description-card-content">
+        
+    </div>
+    <div class="card-footer text-center" id="description-footer">
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#descriptionModal">
+        Show full description
+        </button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"><b>Info</b>
+    </div>
+    <div class="card-body">
+        <p title="Variable"><i class="fa fa-chart-bar"></i>
+            <a href="/soep-core/data/pl/plj0014_v1">plj0014_v1</a>
+        </p>
+        <p title="Concept"><i class="fa fa-cog"></i>
+             <a href="/concept/9">9</a>
+            
+        </p>
+        
+        <p>
+            <b>English label</b>: [de] Staatsangehoerigkeit  [1984-1993,1996-2019]
+        </p>
+        
+        
+        <p>
+            <b>German label</b>: Staatsangehoerigkeit  [1984-1993,1996-2019] 
+        </p>
+        
+         
+
+
+        <hr>
+
+        <p title="Dataset"><b><i class="fa fa-table"></i></b>
+            <a href="/soep-core/data/pl">
+
+                pl
+
+                <small>&#x2013; Data from individual questionnaire (long)</small>
+
+            </a>
+        </p>
+        <p><b>Analysis Unit:</b>
+            individual
+        </p>
+        <p><b>Dataset Type:</b>
+            Original (top level folder)
+        </p>
+        <p><b>Period:</b>
+            unspecified
+        </p>
+
+        <hr>
+
+        <p><b>Study:</b>
+            <a href="/soep-core/">SOEP-Core</a>
+        </p>
+    </div>
+</div>
+
+<!-- Questions Modal  -->
+<div class="modal" tabindex="-1" role="dialog" id="relatedQuestionsModal">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <table class="table">
+            <tr>
+                <th scope="col">
+                Period
+                </th>
+                <th scope="col">
+                Instrument
+                </th>
+                <th scope="col">
+                Question Text
+                </th>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual (CAPI) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-pe-lgb/178">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual (CAPI) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-pe2/178">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Follow-up) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-p-m345-wieder/Q328">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Initial interview) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-pb-m345-erst/Q012">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual (CAPI) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-pe-lgb/178">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Initial interview) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-pb-m345-erst/Q012">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual (CAPI) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-pe2/178">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2019
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Follow-up) 2019
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2019-p-m345-wieder/Q328">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2018
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2018
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2018-pe/182">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2018
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2018
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2018-pe/182">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2018
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Initial interview) 2018
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2018-pb-m345-erst/Q012">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2018
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Initial interview) 2018
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2018-pb-m345-erst/Q012">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual (M1/M2, Follow-up) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-p-m12/200">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pe/200">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual and Biography (M3/M4, Follow-up) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pb-m34-wieder/Q474">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual and Biography (M1/M2, Initial Interview) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pb-m12-erst/47">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Initial Interview) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pb-m345-erst/Q009">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pe/200">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual and Biography (M1/M2, Initial Interview) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pb-m12-erst/47">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual (M1/M2, Follow-up) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-p-m12/200">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual and Biography (M3-M5, Initial Interview) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pb-m345-erst/Q009">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2017
+                </td>
+                <td scope="row">
+                Individual and Biography (M3/M4, Follow-up) 2017
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2017-pb-m34-wieder/Q474">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual (M1/M2, Follow-up) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-p-m12/162">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual (M1/M2, Follow-up) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-p-m12/162">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual and Biography (M1/M2, Initial Interview) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-pb-m12-erst/47">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual and Biography (M1/M2, Initial Interview) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-pb-m12-erst/47">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual and Biography (M3/M4, Follow-up) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-pb-m34/1">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual and Biography (M3/M4, Follow-up) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-pb-m34/1">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-pe/162">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2016
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2016
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2016-pe/162">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2015
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2015
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2015-pe/162">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2015
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2015
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2015-pe/162">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2014
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2014
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2014-pe/133">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2014
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2014
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2014-pe/133">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2013
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2013
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2013-pe/147">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2013
+                </td>
+                <td scope="row">
+                Individual (PAPI) 2013
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2013-pe/147">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2012
+                </td>
+                <td scope="row">
+                Individual 2012
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2012-pe/143">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2012
+                </td>
+                <td scope="row">
+                Individual 2012
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2012-pe/143">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2011
+                </td>
+                <td scope="row">
+                Individual 2011
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2011-pe/143">What is your citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2011
+                </td>
+                <td scope="row">
+                Individual 2011
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2011-pe/143">What is your citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2009
+                </td>
+                <td scope="row">
+                Individual 2009
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2009-pe/140">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2009
+                </td>
+                <td scope="row">
+                Individual 2009
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2009-pe/139">Have you had German citizenship since birth or did you acquire it at a later date?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2009
+                </td>
+                <td scope="row">
+                Individual 2009
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2009-pe/139">Have you had German citizenship since birth or did you acquire it at a later date?</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td scope="row">
+                2009
+                </td>
+                <td scope="row">
+                Individual 2009
+                </td>
+                <td scope="row">
+                <a href="/soep-core/inst/soep-core-2009-pe/140">What is your country of citizenship?</a>
+                </td>
+            </tr>
+            
+
+        </table>
+    </div>
+
+    </div>
+  </div>
+</div>
+<!-- Questions Modal End -->
+
+<!-- Description Modal -->
+<div class="modal" tabindex="-1" role="dialog" id="descriptionModal">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Description</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body" id="description-modal-content">
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Description Modal End -->
+
+
+
+
+
+
+<div class="card">
+    <div class="card-header"><b>Questions</b>
+    </div>
+    <div class="card-body">
+        <ul>
+            
+                <li><a href="/soep-core/inst/soep-core-2019-pe-lgb/178">What is your country of citizenship?</a>
+                </li>
+            
+                <li><a href="/soep-core/inst/soep-core-2019-pe2/178">What is your country of citizenship?</a>
+                </li>
+            
+                <li><a href="/soep-core/inst/soep-core-2019-p-m345-wieder/Q328">What is your country of citizenship?</a>
+                </li>
+            
+                <li><a href="/soep-core/inst/soep-core-2019-pb-m345-erst/Q012">What is your country of citizenship?</a>
+                </li>
+            
+                <li><a href="/soep-core/inst/soep-core-2019-pe-lgb/178">What is your country of citizenship?</a>
+                </li>
+            
+        </ul>
+    </div>
+    
+        <div class="card-footer text-center">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#relatedQuestionsModal">
+            Show all questions
+            </button>
+        </div>
+    
+</div>
+
+
+            <div class="card">
+    <div class="card-header"><b>Statistics</b>
+    </div>
+    <table class="table" id="statistics_table">
+        <thead>
+        <tr>
+            <th>Measure</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <td>
+                    valid
+                </td>
+                <td>
+                    151391
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    invalid
+                </td>
+                <td>
+                    560964
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+</div>
+        </div>
+    </div>
+    
+        
+    
+
+    </div>
+    <div>
+    <!-- Page Footer -->
+    <div class="container container-white" id="foot-container">
+        <hr>
+        <p><strong><a href="/contact/">Contact / feedback</a></strong>
+        </p>
+        <p class="text-muted">
+            <a href="https://www.diw.de/en/soep/" target="_blank">
+                German Socio-economic Panel
+            </a>
+            (SOEP)
+            <a href="/imprint/">Imprint</a>
+        </p>
+    </div>
+    
+    <!-- No tracking code included with these settings -->
+
+
+    <!-- Webpack bundle: "index" JS -->
+    <script type="text/javascript" src="/static/dist/index.js" ></script>
+
+    
+    <!-- Webpack bundle: "visualization" JS -->
+    <script type="text/javascript" src="/static/dist/variables.js" ></script>
+    <script type="text/javascript" src="/static/dist/visualization.js" ></script>
+
+    </body>
+
+</html>
