@@ -1,0 +1,1407 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+
+        pl/plj0001
+
+    </title>
+    <link rel="shortcut icon" type="image/png" href="/static/dist/favicon.ico"/>
+    <!-- Webpack bundle: "index" CSS -->
+    <link type="text/css" href="/static/dist/index.css" rel="stylesheet" />
+
+    <!-- Webpack bundle: "visualization" CSS -->
+    <link type="text/css" href="/static/dist/visualization.css" rel="stylesheet" />
+    <link type="text/css" href="/static/dist/variables.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+<nav id="paneldata-navbar" id="nav-container" class="navbar-expand-md">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+        <ul class="navbar-nav container-fluid">
+            <li class="nav-item">
+                <a type="button" class="btn" href="/">paneldata.org</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a type="button" class="btn dropdown-toggle" href="#" id="navbarbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Studies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <a class="dropdown-item" href="/soep-base/">BASE II</a>
+
+                    <a class="dropdown-item" href="/pairfam/">pairfam</a>
+
+                    <a class="dropdown-item" href="/iab-soep-mig/">IAB-SOEP Migration Sample</a>
+
+                    <a class="dropdown-item" href="/gip/">German Internet Panel (GIP)</a>
+
+                    <a class="dropdown-item" href="/soep-long/">SOEP-Long</a>
+
+                    <a class="dropdown-item" href="/soep-pretest/">SOEP Pretests</a>
+
+                    <a class="dropdown-item" href="/soep-core/">SOEP-Core</a>
+
+                    <a class="dropdown-item" href="/soep-is/">SOEP-IS</a>
+
+                    <a class="dropdown-item" href="/twinlife/">TwinLife</a>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a type="button" class="btn" href="/search/">Search</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav container-fluid justify-content-end">
+
+            <li class="nav-item">
+                <a type="button" class="btn" href="/workspace/login/?next=/soep-core/data/pl/plj0001">Register / log in</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="container-fluid d-flex justify-content-start mt-2">
+        <a class="navbar-brand" href="/soep-core/">
+            SOEP-Core
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/soep-core/#datasets" class="nav-link">Data</a>
+            </li>
+            <li class="nav-item"><a href="/soep-core/#instruments" class="nav-link">Instruments</a>
+            </li>
+
+            <li class="nav-item"><a href="/soep-core/topics/en" class="nav-link">Topics</a>
+            </li>
+
+            <li class="nav-item"><a href="/soep-core/publ/" class="nav-link">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a
+                        href='https://paneldata.org/search/all?Study="SOEP-Core"'
+                        class="nav-link">
+                    Search in Study
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>
+
+<!-- Main Content -->
+<div class="flex-column d-flex px-5 justify-content-center" id="main-container">
+
+    <!-- Nobody should use IE anymore -->
+    <div id="windowsWarning" class="hidden alert alert-danger" align="center">
+        <h1>Attention</h1>
+        <p>
+            You are using Internet Explorer.</br>
+            Content will likely not be displayed correctly.</br>
+            Please switch to a different Browser to use this site.
+        </p>
+    </div>
+    <!--[if IE]>
+    <div class="hidden alert alert-danger" align="center">
+        <h1>Attention</h1>
+        <p>
+            You are using Internet Explorer.</br>
+            Content will likely not be displayed correctly.</br>
+            Please switch to a different Browser to use this site.
+        </p>
+    </div>
+    <![endif]-->
+
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="hrLh3nJVzkOB4pPDz8tQKnij8aGChS1Sqcs0sTcuP6RunnO3yk4F9y1GXH9xeVDD">
+    <script id="context_data" type="application/json">{"variable": {"id": "f65ff9e8-c3cb-52c1-9ebb-f8c57017f28f", "name": "plj0001", "data": {"name": "plj0001", "label": "Since when in East,West Germany ... Filter", "label_de": "Seit wann in Ost-,Westteil Dtschlands", "concept_id": "478901a8-ff8b-5806-9059-17de500778ba", "scale": "cat", "uni": {"labels": ["[-8] [de] Frage in diesem Jahr nicht Teil des Frageprogramms", "[-7] Only available in less restricted edition", "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] [de] in Fragebogenversion nicht enthalten", "[-4] [de] Unzulaessige Mehrfachantwort", "[-3] [de] nicht valide", "[-2] [de] trifft nicht zu", "[-1] [de] keine Angabe", "[2] [de] Nach 1949", "[1] [de] Seit Geburt o.s.1949"], "values": [-8, -7, -6, -5, -4, -3, -2, -1, 2, 1], "missings": [true, true, true, true, true, true, true, true, false, false], "labels_de": ["[-8] Frage in diesem Jahr nicht Teil des Frageprogramms", "[-7] Nur in weniger eingeschr\u00e4nkter Edition verf\u00fcgbar", "[-6] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] in Fragebogenversion nicht enthalten", "[-4] Unzulaessige Mehrfachantwort", "[-3] nicht valide", "[-2] trifft nicht zu", "[-1] keine Angabe", "[1] Seit Geburt o.s.1949", "[2] Nach 1949"], "frequencies": [658138, 0, 0, 4453, 0, 0, 37768, 213, 726, 11057]}}}, "baskets": {}}</script>
+    <h1><i class="fa fa-chart-bar" title="Variable"></i>
+        pl/plj0001: Since when in East,West Germany ... Filter
+    </h1>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="btn-toolbar" role="toolbar" aria-label="...">
+                <div class="btn-group btn-group-sm float-right" id="chart_nav_dropdown"
+                     role="group"></div>
+                <div class="btn-group btn-group-sm float-right" role="group" aria-label="..."
+                     id="vis_menu">
+                    <a type="button" class="btn opt chart_nav" id="percent">Percent</a>
+                    <a type="button" class="btn opt chart_nav"
+                       id="missings">Hide Missings</a>
+                </div>
+            </div>
+            <div id="menu"></div>
+            <div id="chart"></div>
+            <div id="chart_missings"></div>
+
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="nav-item"
+                        title="Variables with the same concept">
+                        <a href="#related_variables"
+                           aria-controls="related_variables"
+                           data-toggle="tab"
+                           class="nav-link active"
+                        >
+                            Related variables
+                            <span class="badge badge-secondary">
+                                5
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a href="#origin_variables"
+                           aria-controls="origin_variables"
+                           data-toggle="tab"
+                           class="nav-link"
+                        >
+                            Input variables
+                            <span class="badge badge-secondary">
+                                4
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a href="#target_variables"
+                           aria-controls="target_variables"
+                           data-toggle="tab"
+                           class="nav-link"
+                        >
+                            Output variables
+                            <span class="badge badge-secondary">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="related_variables">
+
+                        <div class="card">
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-lg-3">
+                                        0:
+                                        <br>
+
+                                        <a href="/soep-core/data/pl/plj0001">
+                                            pl/plj0001
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1984:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1985:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1986:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1987:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1988:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1989:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1990:
+                                        <br>
+
+                                        <a href="/soep-core/data/gp/gp10801">
+                                            gp/gp10801
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1991:
+                                        <br>
+
+                                        <a href="/soep-core/data/hp/hp108b01">
+                                            hp/hp108b01
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1992:
+                                        <br>
+
+                                        <a href="/soep-core/data/ip/ip10801">
+                                            ip/ip10801
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1993:
+                                        <br>
+
+                                        <a href="/soep-core/data/jp/jp108b01">
+                                            jp/jp108b01
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1994:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1995:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1996:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1997:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1998:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1999:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2000:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2001:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2002:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2003:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2004:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2005:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2006:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2007:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2008:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2009:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2010:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2011:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2012:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2013:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2014:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2015:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2016:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2017:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2018:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2019:
+                                        <br>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="origin_variables">
+
+
+
+                        <div class="card">
+
+                            <div class="card-header"><b>Soep-Core</b>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-lg-3">
+                                        0:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1984:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1985:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1986:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1987:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1988:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1989:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1990:
+                                        <br>
+
+                                        <a href="/soep-core/data/gp/gp10801">
+                                            gp/gp10801
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1991:
+                                        <br>
+
+                                        <a href="/soep-core/data/hp/hp108b01">
+                                            hp/hp108b01
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1992:
+                                        <br>
+
+                                        <a href="/soep-core/data/ip/ip10801">
+                                            ip/ip10801
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1993:
+                                        <br>
+
+                                        <a href="/soep-core/data/jp/jp108b01">
+                                            jp/jp108b01
+                                        </a>
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1994:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1995:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1996:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1997:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        1998:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        1999:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2000:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2001:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2002:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2003:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2004:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2005:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2006:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2007:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2008:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2009:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2010:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2011:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2012:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2013:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2014:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2015:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2016:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2017:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        2018:
+                                        <br>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" style="margin-top: 15px">
+
+
+                                    <div class="col-lg-3">
+                                        2019:
+                                        <br>
+
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        none:
+                                        <br>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="target_variables">
+
+                        <div class="card bg-light card-body mb-3">No output variables</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Value Labels</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>en</th>
+
+                        <th>
+                            de
+                        </th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th>
+                            1
+                        </th>
+
+                        <td>
+                            [1] [de] Seit Geburt o.s.1949
+                        </td>
+
+                        <td>
+                            [1] Seit Geburt o.s.1949
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            2
+                        </th>
+
+                        <td>
+                            [2] [de] Nach 1949
+                        </td>
+
+                        <td>
+                            [2] Nach 1949
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -1
+                        </th>
+
+                        <td>
+                            [-1] [de] keine Angabe
+                        </td>
+
+                        <td>
+                            [-1] keine Angabe
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -2
+                        </th>
+
+                        <td>
+                            [-2] [de] trifft nicht zu
+                        </td>
+
+                        <td>
+                            [-2] trifft nicht zu
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -3
+                        </th>
+
+                        <td>
+                            [-3] [de] nicht valide
+                        </td>
+
+                        <td>
+                            [-3] nicht valide
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -4
+                        </th>
+
+                        <td>
+                            [-4] [de] Unzulaessige Mehrfachantwort
+                        </td>
+
+                        <td>
+                            [-4] Unzulaessige Mehrfachantwort
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -5
+                        </th>
+
+                        <td>
+                            [-5] [de] in Fragebogenversion nicht enthalten
+                        </td>
+
+                        <td>
+                            [-5] in Fragebogenversion nicht enthalten
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -6
+                        </th>
+
+                        <td>
+                            [-6] [de] Fragebogenversion mit geaenderter Filterfuehrung
+                        </td>
+
+                        <td>
+                            [-6] Fragebogenversion mit geaenderter Filterfuehrung
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -7
+                        </th>
+
+                        <td>
+                            [-7] Only available in less restricted edition
+                        </td>
+
+                        <td>
+                            [-7] Nur in weniger eingeschränkter Edition verfügbar
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th>
+                            -8
+                        </th>
+
+                        <td>
+                            [-8] [de] Frage in diesem Jahr nicht Teil des Frageprogramms
+                        </td>
+
+                        <td>
+                            [-8] Frage in diesem Jahr nicht Teil des Frageprogramms
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header"><b>Basket</b>
+                </div>
+                <div class="list-group" id="basket-list">
+
+                </div>
+                <div class="card-body">Please <a href="/workspace/login/">login</a>
+                    or <a href="{% url 'workspace:register' %">register</a>
+                    to
+                    use the basket functionality.
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><b>Description</b>
+                </div>
+                <div class="card-body" id="description-card-content">
+
+                </div>
+                <div class="card-footer text-center" id="description-footer">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#descriptionModal">
+                        Show full description
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header"><b>Info</b>
+                </div>
+                <div class="card-body">
+                    <p title="Variable"><i class="fa fa-chart-bar"></i>
+                        <a href="/soep-core/data/pl/plj0001">plj0001</a>
+                    </p>
+                    <p title="Concept"><i class="fa fa-cog"></i>
+                        <a href="/concept/_1229_p_bmi">since when in east,west germany ... filter</a>
+
+                    </p>
+
+                    <p>
+                        <b>English label</b>: Since when in East,West Germany ... Filter
+                    </p>
+
+
+                    <p>
+                        <b>German label</b>: Seit wann in Ost-,Westteil Dtschlands
+                    </p>
+
+
+
+
+                    <hr>
+
+                    <p title="Dataset"><b><i class="fa fa-table"></i></b>
+                        <a href="/soep-core/data/pl">
+
+                            pl
+
+                            <small>&#x2013; Data from individual questionnaire (long)</small>
+
+                        </a>
+                    </p>
+                    <p><b>Analysis Unit:</b>
+                        individual
+                    </p>
+                    <p><b>Dataset Type:</b>
+                        Original (top level folder)
+                    </p>
+                    <p><b>Period:</b>
+                        unspecified
+                    </p>
+
+                    <hr>
+
+                    <p><b>Study:</b>
+                        <a href="/soep-core/">SOEP-Core</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Questions Modal  -->
+            <div class="modal" tabindex="-1" role="dialog" id="relatedQuestionsModal">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Questions</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <table class="table">
+                                <tr>
+                                    <th scope="col">
+                                        Period
+                                    </th>
+                                    <th scope="col">
+                                        Instrument
+                                    </th>
+                                    <th scope="col">
+                                        Question Text
+                                    </th>
+                                </tr>
+
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Questions Modal End -->
+
+            <!-- Description Modal -->
+            <div class="modal" tabindex="-1" role="dialog" id="descriptionModal">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Description</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="description-modal-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Description Modal End -->
+
+
+
+
+
+
+            <div class="card">
+                <div class="card-header"><b>Statistics</b>
+                </div>
+                <table class="table" id="statistics_table">
+                    <thead>
+                    <tr>
+                        <th>Measure</th>
+                        <th>Value</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            valid
+                        </td>
+                        <td>
+                            11783
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            invalid
+                        </td>
+                        <td>
+                            700572
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Codes of related variables with the same concept</h2>
+    <p>This table provides you with an overview of label definitions across
+        related variables to identify changes over time in longitudinal variables.
+        The first number indicates the value code, the second number (in brackets)
+        represents the frequency in the data. Please note that labels are simplified
+        and values with frequency = 0 are hidden.</p>
+    <!-- End content -->
+    <div class="table-responsive">
+        <table class="table" id="label_table">
+            <thead><tr>
+                <th><i class="fa fa-chart-bar" title="Variable"></i> Variable</th>
+                <th><a href="/soep-core/data/pl/plj0001">plj0001</a></th>
+                <th><a href="/soep-core/data/gp/gp10801">gp10801</a></th>
+                <th><a href="/soep-core/data/hp/hp108b01">hp108b01</a></th>
+                <th><a href="/soep-core/data/ip/ip10801">ip10801</a></th>
+                <th><a href="/soep-core/data/jp/jp108b01">jp108b01</a></th>
+            </tr><tr><th><i class="fa fa-table" title="Dataset"></i> Dataset</th>
+                <th><a href="/soep-core/data/pl">pl</a></th>
+                <th><a href="/soep-core/data/gp">gp</a></th>
+                <th><a href="/soep-core/data/hp">hp</a></th>
+                <th><a href="/soep-core/data/ip">ip</a></th>
+                <th><a href="/soep-core/data/jp">jp</a></th>
+            </tr></thead><tbody>
+        <tr>
+            <th>seit geburt o.s.1949</th>
+            <td>1 (11057)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>since 1949 or since birth</th>
+            <td></td>
+            <td>1 (6498)</td>
+            <td>1 (190)</td>
+            <td>1 (4057)</td>
+            <td>1 (312)</td>
+        </tr>
+        <tr>
+            <th>nach 1949</th>
+            <td>2 (726)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>after 1949</th>
+            <td></td>
+            <td>2 (551)</td>
+            <td>2 (23)</td>
+            <td>2 (123)</td>
+            <td>2 (29)</td>
+        </tr>
+        <tr>
+            <th>keine angabe</th>
+            <td>-1 (213)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>no answer</th>
+            <td></td>
+            <td>-1 (130)</td>
+            <td>-1 (20)</td>
+            <td>-1 (53)</td>
+            <td>-1 (10)</td>
+        </tr>
+        <tr>
+            <th>trifft nicht zu</th>
+            <td>-2 (37768)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>does not apply</th>
+            <td></td>
+            <td>-2 (2340)</td>
+            <td>-2 (13436)</td>
+            <td>-2 (9164)</td>
+            <td>-2 (12828)</td>
+        </tr>
+        <tr>
+            <th>nicht valide</th>
+            <td>-3 (0)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>answer improbable</th>
+            <td></td>
+            <td>-3 (0)</td>
+            <td>-3 (0)</td>
+            <td>-3 (0)</td>
+            <td>-3 (0)</td>
+        </tr>
+        <tr>
+            <th>unzulaessige mehrfachantwort</th>
+            <td>-4 (0)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>inadmissible multiple response</th>
+            <td></td>
+            <td>-4 (0)</td>
+            <td>-4 (0)</td>
+            <td>-4 (0)</td>
+            <td>-4 (0)</td>
+        </tr>
+        <tr>
+            <th>in fragebogenversion nicht enthalten</th>
+            <td>-5 (4453)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>not included in this version of the questionnaire</th>
+            <td></td>
+            <td>-5 (0)</td>
+            <td>-5 (0)</td>
+            <td>-5 (0)</td>
+            <td>-5 (0)</td>
+        </tr>
+        <tr>
+            <th>fragebogenversion mit geaenderter filterfuehrung</th>
+            <td>-6 (0)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>version of questionnaire with modified filtering</th>
+            <td></td>
+            <td>-6 (0)</td>
+            <td>-6 (0)</td>
+            <td>-6 (0)</td>
+            <td>-6 (0)</td>
+        </tr>
+        <tr>
+            <th>only available in less restricted edition</th>
+            <td>-7 (0)</td>
+            <td>-7 (0)</td>
+            <td>-7 (0)</td>
+            <td>-7 (0)</td>
+            <td>-7 (0)</td>
+        </tr>
+        <tr>
+            <th>frage in diesem jahr nicht teil des frageprogramms</th>
+            <td>-8 (658138)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody></table>
+    </div>
+    <div class="content">
+        <!-- Restart content -->
+
+
+
+    </div>
+    <div>
+        <!-- Page Footer -->
+        <div class="container container-white" id="foot-container">
+            <hr>
+            <p><strong><a href="/contact/">Contact / feedback</a></strong>
+            </p>
+            <p class="text-muted">
+                <a href="https://www.diw.de/en/soep/" target="_blank">
+                    German Socio-economic Panel
+                </a>
+                (SOEP)
+                <a href="/imprint/">Imprint</a>
+            </p>
+        </div>
+
+        <!-- No tracking code included with these settings -->
+
+
+        <!-- Webpack bundle: "index" JS -->
+        <script type="text/javascript" src="/static/dist/index.js" ></script>
+
+
+        <!-- Webpack bundle: "visualization" JS -->
+        <script type="text/javascript" src="/static/dist/variables.js" ></script>
+        <script type="text/javascript" src="/static/dist/visualization.js" ></script>
+
+</body>
+
+</html>

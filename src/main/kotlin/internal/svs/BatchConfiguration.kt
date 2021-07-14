@@ -27,26 +27,25 @@ class BatchConfiguration(
     @Autowired private var stepBuilderFactory: StepBuilderFactory
 ) {
     @Bean
-    fun questionDownloadingJob(questionDownloadingStep: Step): Job {
-        return jobBuilderFactory["questionDownloadingJob"]
+    fun questionDownloadingJob(questionDownloadingStep: Step): Job =
+        jobBuilderFactory["questionDownloadingJob"]
             .incrementer(RunIdIncrementer())
             .flow(questionDownloadingStep)
             .end()
             .build()
-    }
 
     @Bean
     fun questionDownloadingStep(
         variableReader: ItemReader<Variable>,
         variablePageContentLoader: VariablePageContentLoader,
         variablePageQuestionExtractor: VariablePageQuestionExtractor,
-        questionWriter: ItemWriter<Question>
-    ): Step {
-        return stepBuilderFactory["questionDownloadingStep"]
-            .chunk<Variable, Question>(CHUNK_SIZE)
+        questionWriter: ItemWriter<VariableQuestion>
+    ): Step =
+        stepBuilderFactory["questionDownloadingStep"]
+            .chunk<Variable, VariableQuestion>(CHUNK_SIZE)
             .reader(variableReader)
             .processor(
-                CompositeItemProcessorBuilder<Variable, Question>()
+                CompositeItemProcessorBuilder<Variable, VariableQuestion>()
                     .delegates(
                         variablePageContentLoader,
                         variablePageQuestionExtractor
@@ -55,7 +54,6 @@ class BatchConfiguration(
             )
             .writer(questionWriter)
             .build()
-    }
 
     @Bean
     fun variableReader(): ItemReader<Variable> =
@@ -74,20 +72,20 @@ class BatchConfiguration(
             .build()
 
     @Bean
-    fun questionWriter(): ItemWriter<Question> =
-        FlatFileItemWriterBuilder<Question>()
+    fun questionWriter(): ItemWriter<VariableQuestion> =
+        FlatFileItemWriterBuilder<VariableQuestion>()
             .name("questionWriter")
             .resource(FileSystemResource("output.csv"))
             .delimited()
-            .fieldExtractor { question ->
+            .fieldExtractor {
                 listOf(
-                    question.variable.datasetId,
-                    question.variable.name,
-                    question.variable.referenceUrl,
-                    question.period,
-                    question.instrument,
-                    question.text,
-                    question.referenceUrl
+                    it.variable.datasetId,
+                    it.variable.name,
+                    it.variable.referenceUrl,
+                    it.question?.period ?: "n/a",
+                    it.question?.instrument ?: "n/a",
+                    it.question?.text ?: "n/a",
+                    it.question?.referenceUrl ?: "n/a",
                 )
                     .map { value -> value.toString().escapeCsv() }
                     .toTypedArray()
@@ -107,5 +105,5 @@ class BatchConfiguration(
             }
             .build()
 
-    private fun String.escapeCsv():String = StringEscapeUtils.escapeCsv(this)
+    private fun String.escapeCsv(): String = StringEscapeUtils.escapeCsv(this)
 }

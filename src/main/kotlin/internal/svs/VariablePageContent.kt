@@ -17,7 +17,6 @@ data class VariablePageContent(
 
     private fun Element.asQuestion() =
         Question(
-            variable = variable,
             period = select("td:eq(0)").text(),
             instrument = select("td:eq(1)").text(),
             text = select("td:eq(2)").text(),

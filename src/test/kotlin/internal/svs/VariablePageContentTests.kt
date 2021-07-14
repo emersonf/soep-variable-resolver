@@ -18,8 +18,8 @@ class VariablePageContentTests {
     }
 
     @Test
-    fun `should extract large question list correctly`() {
-        val variablePageContent = asVariablePageContent("plj0014_v1.html")
+    fun `should construct page content correctly from page with questions`() {
+        val variablePageContent = asVariablePageContent("page-with-questions-plj0014_v1.html")
 
         assertThat(variablePageContent.questionList).hasSize(44)
 
@@ -29,5 +29,12 @@ class VariablePageContentTests {
             assertThat(text).isEqualTo("What is your country of citizenship?")
             assertThat(referenceUrl.toString()).isEqualTo("$PANEL_DATA_SITE_DOMAIN/soep-core/inst/soep-core-2019-pe-lgb/178")
         }
+    }
+
+    @Test
+    fun `should construct page content correctly despite missing question section`() {
+        val variablePageContent = asVariablePageContent("page-missing-question-section-plj0001.html")
+
+        assertThat(variablePageContent.questionList).hasSize(0)
     }
 }
