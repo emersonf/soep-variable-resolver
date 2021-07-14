@@ -9,6 +9,8 @@ biol,lr3039
 pl,plj0001
 ```
 
+The input CSV cannot contain blank lines.
+
 # Output
 The output is stored in the `output.csv` CSV file.
 
