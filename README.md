@@ -27,9 +27,9 @@ Note that
 The code already has support for multiple questions, so this should be straightforward to change.
 
 # Running
-To run the application, you'll need Java, specifically JRE 8.
+To run the application, you'll need Java, specifically JRE 8 and basic familiarity with a terminal, like Terminal on macOS. If you don't have Java, you can [get it from Oracle](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
 
-You can either download the application from GitHub or [build it](#compiling) yourself. Once you have the JAR file, open a terminal and run:
+You can either download the application from the GitHub [Releases page](https://github.com/emersonf/soep-variable-resolver/releases) (look under Assets) or [build it](#compiling) yourself. Once you have the JAR file, open a terminal and run:
 
 ```
 java -jar soep-variable-resolver-<version number>.jar
@@ -45,7 +45,7 @@ Please note that each run overwrites any CSV file created by the previous run.
 
 # Compiling
 
-To compile the code, you'll need JDK 8. 
+To compile the code, you'll need JDK 8 or newer. 
 
 Simply run `./gradlew build` from a terminal. The application will be created in the `build/libs/soep-variable-resolver-<version number>.jar` file. Please note that there are two JARs in that directory, you'll need the larger one, not the one with the `-plain` suffix.
 
