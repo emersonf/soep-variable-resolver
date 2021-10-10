@@ -37,7 +37,7 @@ You can either download the application from the GitHub [Releases page](https://
 java -jar soep-variable-resolver-<version number>.jar
 ```
 
-You should the application logs scroll by. If the run succeeds, you'll see output that looks like:
+You should see the application logs scroll by. If the run succeeds, you'll see output that the "Job ... [COMPLETED]", which looks like this:
 
 ```
 2021-07-09 20:54:35.542  INFO 19597 --- [           main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=questionDownloadingJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 1s631ms
